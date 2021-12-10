@@ -17,7 +17,6 @@ public class TCPServerRMS extends Thread {
 
    public TCPServerRMS(int port) throws IOException {
       serverSocket = new ServerSocket(port);
-      serverSocket.setSoTimeout(100000);
 
    }
 
