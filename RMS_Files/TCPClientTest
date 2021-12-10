@@ -17,7 +17,7 @@ public class TCPClientTest {
     
     public static void main(String [] args) {
       String serverName = "173.31.130.210"; 
-      int port = Integer.parseInt("5062");
+      int port = Integer.parseInt("1434");
       try {
          System.out.println("Connecting to " + serverName + " on port " + port);
          Socket client = new Socket(serverName, port);
