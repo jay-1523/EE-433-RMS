@@ -22,29 +22,126 @@ public class DeliveryJFrame extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        deliveryJPanel2 = new DeliveryJPanel();
+        jButtonChanges = new javax.swing.JButton();
+        jButtonPrint = new javax.swing.JButton();
+        jButtonCheckOut = new javax.swing.JButton();
+        jButtonX = new javax.swing.JButton();
+        deliveryJPanel1 = new DeliveryJPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        jButtonChanges.setFont(new java.awt.Font("Times New Roman", 1, 30)); // NOI18N
+        jButtonChanges.setText("Changes");
+        jButtonChanges.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonChangesActionPerformed(evt);
+            }
+        });
+
+        jButtonPrint.setFont(new java.awt.Font("Times New Roman", 1, 30)); // NOI18N
+        jButtonPrint.setText("Print");
+        jButtonPrint.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonPrintActionPerformed(evt);
+            }
+        });
+
+        jButtonCheckOut.setFont(new java.awt.Font("Times New Roman", 1, 30)); // NOI18N
+        jButtonCheckOut.setText("Check Out");
+        jButtonCheckOut.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonCheckOutActionPerformed(evt);
+            }
+        });
+
+        jButtonX.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
+        jButtonX.setText("X");
+        jButtonX.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonXActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(deliveryJPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(38, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addComponent(deliveryJPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jButtonX)
+                        .addGap(18, 18, 18))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jButtonChanges)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jButtonCheckOut)
+                        .addGap(7, 7, 7)
+                        .addComponent(jButtonPrint)
+                        .addContainerGap())))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(deliveryJPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(11, 11, 11)
+                        .addComponent(jButtonX))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(20, 20, 20)
+                        .addComponent(deliveryJPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(3, 3, 3)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButtonChanges)
+                    .addComponent(jButtonCheckOut)
+                    .addComponent(jButtonPrint))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButtonChangesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonChangesActionPerformed
+
+        Delivery_ChangesJFrame delivery_changesjframe;
+
+        delivery_changesjframe = new Delivery_ChangesJFrame();
+        delivery_changesjframe.setVisible(true);
+
+        this.setVisible(false);
+
+    }//GEN-LAST:event_jButtonChangesActionPerformed
+
+    private void jButtonPrintActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonPrintActionPerformed
+        // Export file into appropiate ticket format to be printed
+
+    }//GEN-LAST:event_jButtonPrintActionPerformed
+
+    private void jButtonCheckOutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonCheckOutActionPerformed
+        // Connect button to register Frame
+        
+        Register_Frame register_frame;
+
+        register_frame = new Register_Frame();
+        register_frame.setVisible(true);
+
+        this.setVisible(false);
+
+    }//GEN-LAST:event_jButtonCheckOutActionPerformed
+
+    private void jButtonXActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonXActionPerformed
+        // Set Window not visible
+
+        Delivery_NotificationJFrame delivery_notificationjframe;
+
+        delivery_notificationjframe = new Delivery_NotificationJFrame();
+        delivery_notificationjframe.setVisible(true);
+
+        this.setVisible(false);
+
+    }//GEN-LAST:event_jButtonXActionPerformed
 
     /**
      * @param args the command line arguments
@@ -82,6 +179,11 @@ public class DeliveryJFrame extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private DeliveryJPanel deliveryJPanel2;
+    private DeliveryJPanel deliveryJPanel1;
+    private javax.swing.JButton jButtonChanges;
+    private javax.swing.JButton jButtonCheckOut;
+    private javax.swing.JButton jButtonPrint;
+    private javax.swing.JButton jButtonX;
     // End of variables declaration//GEN-END:variables
+
 }
