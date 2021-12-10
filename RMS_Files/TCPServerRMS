@@ -11,11 +11,11 @@ import java.net.SocketTimeoutException;
  *
  * @author roman
  */
-public class TCPServerTest extends Thread {
+public class TCPServerRMS extends Thread {
     
      private ServerSocket serverSocket;
 
-   public TCPServerTest(int port) throws IOException {
+   public TCPServerRMS(int port) throws IOException {
       serverSocket = new ServerSocket(port);
       serverSocket.setSoTimeout(100000);
 
@@ -51,7 +51,7 @@ public class TCPServerTest extends Thread {
    public static void main(String [] args) {
       int port = Integer.parseInt("1434");
       try {
-         Thread t = new TCPServerTest(port);
+         Thread t = new TCPServerRMS(port);
          t.start();
       } catch (IOException e) {
          e.printStackTrace();
